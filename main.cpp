@@ -4,7 +4,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    GameMainWindow w;
+    QBird::GameMainWindow w;
     w.show();
     return a.exec();
 }
