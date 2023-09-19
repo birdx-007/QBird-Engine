@@ -1,0 +1,25 @@
+<UI version="4.0" >
+ <class>GameMainWindowClass</class>
+ <widget class="QWidget" name="GameMainWindowClass" >
+  <property name="objectName" >
+   <string notr="true">GameMainWindowClass</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>GameMainWindow</string>
+  </property>$centralwidget$
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources>
+   <include location="GameResource.qrc"/>
+ </resources>
+ <connections/>
+</UI>
