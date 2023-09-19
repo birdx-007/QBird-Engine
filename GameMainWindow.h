@@ -3,6 +3,7 @@
 #include <QtWidgets/QWidget>
 #include "ui_GameMainWindow.h"
 #include "Input/Input.h"
+#include "Logging/Logger.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class GameMainWindowClass; };
@@ -24,6 +25,7 @@ namespace QBird {
     private:
         Ui::GameMainWindowClass* ui;
         QBird::Input* inputSystem;
+        QBird::Logger* logger;
     };
 };
 

@@ -90,6 +90,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Input\Input.cpp" />
+    <ClCompile Include="Logging\Logger.cpp" />
     <ClCompile Include="Player\GamePlayer.cpp" />
     <QtRcc Include="GameResource.qrc" />
     <QtUic Include="GameMainWindow.ui" />
@@ -101,7 +102,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Input\Input.h" />
+    <ClInclude Include="Logging\Logger.h" />
     <ClInclude Include="Player\GamePlayer.h" />
+    <ClInclude Include="QBirdEngine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
