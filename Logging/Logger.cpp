@@ -13,7 +13,7 @@ QBird::Logger::~Logger()
     outStream.close();
 }
 
-void QBird::Logger::Log(std::string message)
+void QBird::Logger::Log(const std::string& message)
 {
     outStream << message;
 }

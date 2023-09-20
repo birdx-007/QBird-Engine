@@ -20,11 +20,10 @@ QBird::GameMainWindow::~GameMainWindow()
 
 void QBird::GameMainWindow::keyPressEvent(QKeyEvent* event)
 {
-
-    this->inputSystem->keyPressed((Qt::Key)event->key());
+    this->inputSystem->keyPressed(event->key());
 }
 
 void QBird::GameMainWindow::keyReleaseEvent(QKeyEvent* event)
 {
-    this->inputSystem->keyReleased((Qt::Key)event->key());
+    this->inputSystem->keyReleased(event->key());
 }

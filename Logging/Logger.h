@@ -7,7 +7,7 @@ namespace QBird {
     public:
         Logger();
         ~Logger();
-        static void Log(std::string message);
+        static void Log(const std::string& message);
     private:
         static std::ofstream outStream;
     };
