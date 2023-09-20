@@ -1,5 +1,6 @@
 #include "GameMainWindow.h"
 #include <Qt3DInput/qkeyevent.h>
+#include "QBirdEngine.h"
 
 QBird::GameMainWindow::GameMainWindow(QWidget *parent)
     : QWidget(parent)
@@ -19,6 +20,7 @@ QBird::GameMainWindow::~GameMainWindow()
 
 void QBird::GameMainWindow::keyPressEvent(QKeyEvent* event)
 {
+
     this->inputSystem->keyPressed((Qt::Key)event->key());
 }
 
