@@ -2,6 +2,20 @@
 #include "QBirdEngine.h"
 #include <qkeysequence.h>
 
+QBird::Input& QBird::Input::instance()
+{
+    static Input input;
+    return input;
+}
+
+QBird::Input::Input()
+{
+}
+
+QBird::Input::~Input()
+{
+}
+
 void QBird::Input::keyPressed(const Qt::Key& key)
 {
     QBird::Logger::Log("Press key " + QKeySequence(key).toString().toStdString() + '\n');

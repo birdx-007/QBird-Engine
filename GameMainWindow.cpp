@@ -2,20 +2,18 @@
 #include <Qt3DInput/qkeyevent.h>
 #include "QBirdEngine.h"
 
-QBird::GameMainWindow::GameMainWindow(QWidget *parent)
+QBird::GameMainWindow::GameMainWindow(QBird::Input* input,QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::GameMainWindowClass())
-    , inputSystem(new QBird::Input())
-    , logger(new QBird::Logger())
+    , inputSystem(input)
 {
     ui->setupUi(this);
+    assert(input != nullptr);
 }
 
 QBird::GameMainWindow::~GameMainWindow()
 {
     delete ui;
-    delete inputSystem;
-    delete logger;
 }
 
 void QBird::GameMainWindow::keyPressEvent(QKeyEvent* event)

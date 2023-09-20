@@ -15,7 +15,7 @@ namespace QBird {
         Q_OBJECT
 
     public:
-        explicit GameMainWindow(QWidget* parent = nullptr);
+        explicit GameMainWindow(QBird::Input* input,QWidget* parent = nullptr);
         ~GameMainWindow();
     private: // widget events
         void keyPressEvent(QKeyEvent* event) override;
@@ -25,7 +25,6 @@ namespace QBird {
     private:
         Ui::GameMainWindowClass* ui;
         QBird::Input* inputSystem;
-        QBird::Logger* logger;
     };
 };
 
