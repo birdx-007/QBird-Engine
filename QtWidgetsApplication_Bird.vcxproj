@@ -94,6 +94,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GameMainEngine.cpp" />
     <ClCompile Include="Input\Input.cpp" />
     <ClCompile Include="Logging\Logger.cpp" />
     <ClCompile Include="Player\GamePlayer.cpp" />
@@ -106,6 +107,7 @@
     <ResourceCompile Include="QtWidgetsApplication_Bird.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GameMainEngine.h" />
     <ClInclude Include="Input\Input.h" />
     <ClInclude Include="Logging\Logger.h" />
     <ClInclude Include="Player\GamePlayer.h" />

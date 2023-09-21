@@ -8,14 +8,12 @@ namespace Ui { class GameMainWindowClass; };
 QT_END_NAMESPACE
 
 namespace QBird {
-    class Input;
-    class Logger;
     class GameMainWindow : public QWidget
     {
         Q_OBJECT
 
     public:
-        explicit GameMainWindow(QBird::Input* input,QWidget* parent = nullptr);
+        explicit GameMainWindow(QWidget* parent = nullptr);
         ~GameMainWindow();
     private: // widget events
         void keyPressEvent(QKeyEvent* event) override;
@@ -24,7 +22,6 @@ namespace QBird {
         void QuitSignal();
     private:
         Ui::GameMainWindowClass* ui;
-        QBird::Input* inputSystem;
     };
 };
 

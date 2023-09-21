@@ -16,7 +16,7 @@ namespace QBird {
     public:
         NONCOPYABLE(Logger)
         NONASSIGNABLE(Logger)
-        static Logger& instance();
+        static const Logger& instance();
         static void LogInfo(const std::string& message);
         static void LogWarning(const std::string& message);
         static void LogError(const std::string& message);

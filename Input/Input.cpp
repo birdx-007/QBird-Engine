@@ -4,7 +4,7 @@
 
 std::unordered_map<Qt::Key, bool> QBird::Input::keyPressedDict = {};
 
-QBird::Input& QBird::Input::instance()
+const QBird::Input& QBird::Input::instance()
 {
     static Input input;
     return input;
@@ -32,7 +32,7 @@ void QBird::Input::keyPressed(const Qt::Key& key)
 
 void QBird::Input::keyPressed(const int& key)
 {
-    this->keyPressed((Qt::Key)key);
+    keyPressed((Qt::Key)key);
 }
 
 void QBird::Input::keyReleased(const Qt::Key& key)
@@ -43,5 +43,5 @@ void QBird::Input::keyReleased(const Qt::Key& key)
 
 void QBird::Input::keyReleased(const int& key)
 {
-    this->keyReleased((Qt::Key)key);
+    keyReleased((Qt::Key)key);
 }
