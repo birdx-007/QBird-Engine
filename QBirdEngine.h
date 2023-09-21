@@ -6,4 +6,5 @@
 #include "Input/Input.h"
 namespace QBird {
     constexpr const char* QBIRD_LOG_DIR = "QBird.log";
+    constexpr int QBIRD_KEY_PRESSED_DICT_INITIAL_SIZE = 150;
 };

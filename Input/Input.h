@@ -2,6 +2,7 @@
 #include "Utilities/noncopyable.h"
 #include "Utilities/nonassignable.h"
 #include <qnamespace.h>
+#include <unordered_map>
 
 namespace QBird {
     class Input
@@ -11,6 +12,7 @@ namespace QBird {
         NONCOPYABLE(Input)
         NONASSIGNABLE(Input)
         static Input& instance();
+        static bool getKey(const Qt::Key& key);
     private:
         Input();
         ~Input();
@@ -18,5 +20,6 @@ namespace QBird {
         void keyPressed(const int& key);
         void keyReleased(const Qt::Key& key);
         void keyReleased(const int& key);
+        static std::unordered_map<Qt::Key, bool> keyPressedDict;
     };
 };
