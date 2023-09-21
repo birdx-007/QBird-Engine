@@ -98,6 +98,8 @@
     <ClCompile Include="Input\Input.cpp" />
     <ClCompile Include="Logging\Logger.cpp" />
     <ClCompile Include="Player\GamePlayer.cpp" />
+    <ClCompile Include="Utilities\ObserverPattern\Observer.cpp" />
+    <ClCompile Include="Utilities\ObserverPattern\Subject.cpp" />
     <QtRcc Include="GameResource.qrc" />
     <QtUic Include="GameMainWindow.ui" />
     <QtMoc Include="GameMainWindow.h" />
@@ -114,6 +116,8 @@
     <ClInclude Include="QBirdEngine.h" />
     <ClInclude Include="Utilities\nonassignable.h" />
     <ClInclude Include="Utilities\noncopyable.h" />
+    <ClInclude Include="Utilities\ObserverPattern\Observer.h" />
+    <ClInclude Include="Utilities\ObserverPattern\Subject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
