@@ -18,7 +18,7 @@ QBird::Input::~Input()
 
 void QBird::Input::keyPressed(const Qt::Key& key)
 {
-    QBird::Logger::Log("Press key " + QKeySequence(key).toString().toStdString() + '\n');
+    QBird::Logger::LogInfo("Press key " + QKeySequence(key).toString().toStdString());
 }
 
 void QBird::Input::keyPressed(const int& key)
@@ -28,7 +28,7 @@ void QBird::Input::keyPressed(const int& key)
 
 void QBird::Input::keyReleased(const Qt::Key& key)
 {
-    QBird::Logger::Log("Release key " + QKeySequence(key).toString().toStdString() + '\n');
+    QBird::Logger::LogInfo("Release key " + QKeySequence(key).toString().toStdString());
 }
 
 void QBird::Input::keyReleased(const int& key)
