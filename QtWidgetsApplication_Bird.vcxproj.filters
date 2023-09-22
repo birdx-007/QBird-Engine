@@ -78,12 +78,6 @@
     <ClInclude Include="QBirdEngine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Utilities\noncopyable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Utilities\nonassignable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="GameMainEngine.h">
       <Filter>Header Files</Filter>
     </ClInclude>

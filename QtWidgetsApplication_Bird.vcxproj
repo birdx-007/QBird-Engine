@@ -115,8 +115,6 @@
     <ClInclude Include="Player\GamePlayer.h" />
     <ClInclude Include="QBirdDefines.h" />
     <ClInclude Include="QBirdEngine.h" />
-    <ClInclude Include="Utilities\nonassignable.h" />
-    <ClInclude Include="Utilities\noncopyable.h" />
     <ClInclude Include="Utilities\ObserverPattern\Observer.h" />
     <ClInclude Include="Utilities\ObserverPattern\Subject.h" />
   </ItemGroup>

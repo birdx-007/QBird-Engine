@@ -2,6 +2,7 @@
 
 #include <QtWidgets/QWidget>
 #include "ui_GameMainWindow.h"
+#include "QBirdDefines.h"
 #include "Utilities/ObserverPattern/Subject.h"
 
 QT_BEGIN_NAMESPACE
@@ -14,7 +15,7 @@ namespace QBird {
         Q_OBJECT
 
     public:
-        friend class Game;
+        friend class QBIRD_GAME_CLASS_NAME;
         explicit GameMainWindow(QWidget* parent = nullptr);
         ~GameMainWindow();
     private: // widget events
