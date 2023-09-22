@@ -3,12 +3,6 @@
 
 std::ofstream QBird::Logger::Logger::outStream = std::ofstream(QBird::QBIRD_LOG_DIR);
 
-const QBird::Logger& QBird::Logger::instance()
-{
-    static Logger logger;
-    return logger;
-}
-
 QBird::Logger::Logger()
 {
     if (outStream.is_open()) {

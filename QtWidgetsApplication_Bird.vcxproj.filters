@@ -93,5 +93,8 @@
     <ClInclude Include="Utilities\ObserverPattern\Subject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="QBirdDefines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,11 +1,11 @@
 #include "Observer.h"
 
-Observer::Observer(std::function<void()> f)
+ObserverPattern::Observer::Observer(std::function<void()> f)
     :actionOnNotify(f)
 {
 }
 
-void Observer::onNotify() const
+void ObserverPattern::Observer::onNotify() const
 {
     actionOnNotify();
 }

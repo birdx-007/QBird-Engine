@@ -1,19 +1,13 @@
 #pragma once
-#include "Utilities/noncopyable.h"
-#include "Utilities/nonassignable.h"
+#include "QBirdDefines.h"
 #include "Utilities/ObserverPattern/Observer.h"
 namespace QBird {
     class GameMainEngine
     {
-    public:
-        NONCOPYABLE(GameMainEngine)
-        NONASSIGNABLE(GameMainEngine)
-        static const GameMainEngine& instance();
-        void startGameLoop();
-    public:
-        const Observer gameStartObserver;
+        QBIRD_GAME_SINGLETON(GameMainEngine)
+
     private:
-        GameMainEngine();
-        ~GameMainEngine();
+        void startGameLoop();
+        ObserverPattern::Observer gameStartObserver;
     };
 };

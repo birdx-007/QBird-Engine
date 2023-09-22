@@ -14,7 +14,8 @@ namespace QBird {
         Q_OBJECT
 
     public:
-        explicit GameMainWindow(const Observer* gameStartObserver, QWidget* parent = nullptr);
+        friend class Game;
+        explicit GameMainWindow(QWidget* parent = nullptr);
         ~GameMainWindow();
     private: // widget events
         void keyPressEvent(QKeyEvent* event) override;
@@ -23,7 +24,7 @@ namespace QBird {
         void QuitSignal();
     private:
         Ui::GameMainWindowClass* ui;
-        Subject gameStartSubject;
+        ObserverPattern::Subject gameStartSubject;
     };
 };
 

@@ -113,6 +113,7 @@
     <ClInclude Include="Input\Input.h" />
     <ClInclude Include="Logging\Logger.h" />
     <ClInclude Include="Player\GamePlayer.h" />
+    <ClInclude Include="QBirdDefines.h" />
     <ClInclude Include="QBirdEngine.h" />
     <ClInclude Include="Utilities\nonassignable.h" />
     <ClInclude Include="Utilities\noncopyable.h" />

@@ -3,17 +3,17 @@
 
 constexpr int OBSERVER_PATTERN_OBSERVERS_INITIAL_SIZE = 5;
 
-Subject::Subject()
+ObserverPattern::Subject::Subject()
 {
     observers.reserve(OBSERVER_PATTERN_OBSERVERS_INITIAL_SIZE);
 }
 
-void Subject::addObserver(const Observer* observer)
+void ObserverPattern::Subject::addObserver(const ObserverPattern::Observer* observer)
 {
     observers.push_back(observer);
 }
 
-void Subject::removeObserver(const Observer* observer)
+void ObserverPattern::Subject::removeObserver(const ObserverPattern::Observer* observer)
 {
     auto target = std::find(observers.begin(), observers.end(), observer);
     assert(target != observers.end());
@@ -22,9 +22,9 @@ void Subject::removeObserver(const Observer* observer)
     observers.pop_back();
 }
 
-void Subject::notify() const
+void ObserverPattern::Subject::notify() const
 {
-    for (const Observer* observer : observers) {
+    for (const ObserverPattern::Observer* observer : observers) {
         observer->onNotify();
     }
 }

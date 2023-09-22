@@ -2,13 +2,11 @@
 #include "QBirdEngine.h"
 #include <Qt3DInput/qkeyevent.h>
 
-QBird::GameMainWindow::GameMainWindow(const Observer* gameStartObserver, QWidget *parent)
+QBird::GameMainWindow::GameMainWindow(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::GameMainWindowClass())
 {
     ui->setupUi(this);
-    gameStartSubject.addObserver(gameStartObserver);
-    gameStartSubject.notify();
 }
 
 QBird::GameMainWindow::~GameMainWindow()
