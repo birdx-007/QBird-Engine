@@ -3,7 +3,6 @@
 #include <QtWidgets/QWidget>
 #include "ui_GameMainWindow.h"
 #include "QBirdDefines.h"
-#include "Utilities/ObserverPattern/Subject.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class GameMainWindowClass; };
@@ -25,7 +24,6 @@ namespace QBird {
         void QuitSignal();
     private:
         Ui::GameMainWindowClass* ui;
-        ObserverPattern::Subject gameStartSubject;
     };
 };
 

@@ -2,6 +2,7 @@
 #include "QBirdDefines.h"
 #include "GameMainEngine.h"
 #include "GameMainWindow.h"
+#include "Utilities/ObserverPattern/Subject.h"
 #include <QtWidgets/QApplication>
 
 namespace QBird {
@@ -14,15 +15,16 @@ namespace QBird {
             static QBird::Logger logger; // logger must be initialized first
             static QBird::Input input;
             static QBird::GameMainEngine engine;
-            mainWindow.gameStartSubject.addObserver(&engine.gameStartObserver);
+            gameStartSubject.addObserver(&engine.gameStartObserver);
         }
         void start()
         {
             mainWindow.show();
-            mainWindow.gameStartSubject.notify();
+            gameStartSubject.notify();
         }
     private:
         QBird::GameMainWindow mainWindow;
+        ObserverPattern::Subject gameStartSubject;
     };
 };
 

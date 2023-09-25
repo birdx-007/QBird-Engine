@@ -104,12 +104,17 @@
     <QtUic Include="GameMainWindow.ui" />
     <QtMoc Include="GameMainWindow.h" />
     <ClCompile Include="GameMainWindow.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="main.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </ClCompile>
     <None Include="QtWidgetsApplication_Bird.ico" />
     <ResourceCompile Include="QtWidgetsApplication_Bird.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameMainEngine.h" />
+    <QtMoc Include="GameMainEngine.h" />
     <ClInclude Include="Input\Input.h" />
     <ClInclude Include="Logging\Logger.h" />
     <ClInclude Include="Player\GamePlayer.h" />
