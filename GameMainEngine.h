@@ -1,7 +1,9 @@
 #pragma once
 #include "QBirdDefines.h"
 #include "Utilities/ObserverPattern/Observer.h"
+#include <chrono>
 #include <qobject.h>
+
 namespace QBird {
     class GameMainEngine : public QObject
     {
@@ -12,6 +14,9 @@ namespace QBird {
         void startGameLoop();
         void gameLoop();
         long long gameFrame;
+        std::chrono::system_clock::time_point previousLoopTime;
+        std::chrono::system_clock::time_point currentLoopTime;
+        std::chrono::microseconds lagTime;
         ObserverPattern::Observer gameStartObserver;
     signals:
         void EndOfOneGameLoopSignal();
