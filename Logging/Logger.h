@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "QBirdDefines.h"
 #include <string>
 #include <fstream>

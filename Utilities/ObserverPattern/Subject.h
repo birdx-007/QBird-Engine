@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "Observer.h"
 #include <vector>
 namespace ObserverPattern {

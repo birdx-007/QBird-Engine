@@ -1,4 +1,4 @@
-#include "Subject.h"
+﻿#include "Subject.h"
 #include <assert.h>
 
 constexpr int OBSERVER_PATTERN_OBSERVERS_INITIAL_SIZE = 5;

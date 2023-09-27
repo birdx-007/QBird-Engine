@@ -1,4 +1,4 @@
-#include "Observer.h"
+﻿#include "Observer.h"
 
 ObserverPattern::Observer::Observer(std::function<void()> f)
     :actionOnNotify(f)

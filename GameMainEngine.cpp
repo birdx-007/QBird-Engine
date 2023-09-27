@@ -1,4 +1,4 @@
-#include "GameMainEngine.h"
+﻿#include "GameMainEngine.h"
 #include "QBirdEngine.h"
 
 QBird::GameMainEngine::GameMainEngine()

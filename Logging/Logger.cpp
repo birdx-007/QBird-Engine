@@ -1,4 +1,4 @@
-#include "Logger.h"
+﻿#include "Logger.h"
 #include "QBirdEngine.h"
 
 std::ofstream QBird::Logger::Logger::outStream = std::ofstream(QBird::QBIRD_LOG_DIR);

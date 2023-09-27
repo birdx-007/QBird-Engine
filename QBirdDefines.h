@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #define QBIRD_GAME_CLASS_NAME Game
 #define QBIRD_GAME_SINGLETON(Class) \
 public: \

@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "QBirdDefines.h"
 #include <qnamespace.h>
 #include <unordered_map>

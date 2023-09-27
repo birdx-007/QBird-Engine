@@ -1,4 +1,4 @@
-#include "GameMainWindow.h"
+﻿#include "GameMainWindow.h"
 #include "QBirdEngine.h"
 #include <Qt3DInput/qkeyevent.h>
 

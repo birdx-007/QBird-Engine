@@ -1,4 +1,4 @@
-#include "Input.h"
+﻿#include "Input.h"
 #include "QBirdEngine.h"
 #include <qkeysequence.h>
 
