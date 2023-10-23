@@ -13,6 +13,7 @@ namespace QBird {
     private:
         void startGameLoop();
         void gameLoop();
+        void mainUpdate();
         long long gameFrame;
         std::chrono::system_clock::time_point previousLoopTime;
         std::chrono::system_clock::time_point currentLoopTime;

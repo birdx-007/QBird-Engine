@@ -32,9 +32,25 @@ void QBird::GameMainEngine::gameLoop()
     previousLoopTime = currentLoopTime;
     lagTime += elapsedTime;
     while (lagTime >= std::chrono::microseconds(QBird::QBIRD_MICROSECOND_PER_UPDATE)) {
-        QBird::Logger::LogInfo("Frame " + std::to_string(gameFrame));
+        mainUpdate();
         gameFrame++;
         lagTime -= std::chrono::microseconds(QBird::QBIRD_MICROSECOND_PER_UPDATE);
     }
     emit EndOfOneGameLoopSignal();
+}
+
+void QBird::GameMainEngine::mainUpdate()
+{
+    //QBird::Logger::LogInfo("Frame " + std::to_string(gameFrame));
+    Qt::Key testKey = Qt::Key_A;
+    if (QBird::Input::getKeyDown(testKey)) {
+        QBird::Logger::LogInfo("getKeyDown!");
+    }
+    if (QBird::Input::getKey(testKey)) {
+        QBird::Logger::LogInfo("getKey!");
+    }
+    if (QBird::Input::getKeyUp(testKey)) {
+        QBird::Logger::LogInfo("getKeyUp!");
+    }
+    QBird::Input::Update();
 }
